@@ -1,4 +1,4 @@
-<section class="start-section__general">
+<section id="our-advantages" class="start-section__general">
     <img class="start-section__image" src="img/start/start-background.png" alt="">
     <div class="start-section__content">
         <h2 class="start-section__title">Ми дуже раді, що Ви завітали на наш сайт</h2>
@@ -29,7 +29,6 @@
                 </div>
             </div>
         </div>
-
         <div class="start-section__banner-item">
             <div class="start-section__banner-item-icon">
                 <img class="start-section__banner-item-image1" src="img/start/format_list_bulleted.png" alt="">
@@ -49,7 +48,6 @@
                 </div>
             </div>
         </div>
-
         <div class="start-section__banner-item">
             <div class="start-section__banner-item-icon">
                 <img class="start-section__banner-item-image2" src="img/start/schedule.png" alt="">
@@ -69,7 +67,6 @@
                 </div>
             </div>
         </div>
-
         <div class="start-section__banner-item">
             <div class="start-section__banner-item-icon">
                 <img class="start-section__banner-item-image3" src="img/start/format_list_bulleted-2.png" alt="">
@@ -92,9 +89,6 @@
     </div>
 </section>
 
-
-
-
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Niconne&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -102,6 +96,10 @@
         position: relative;
         height: 100vh;
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     .start-section__image {
@@ -116,16 +114,19 @@
         mix-blend-mode: multiply;
         /* накладає колір на картинку */
     }
-
     .start-section__content {
-        position: absolute;
+        position: relative;
         top: 106px;
-        left: 46%;
-        transform: translate(-50%, -50%);
+        transform: translateY(-50%);
         color: white;
         text-align: center;
         margin: 15.225px;
-        min-width: 362.55px;
+        max-width: 362.55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
     }
 
     .start-section__title {
@@ -151,15 +152,6 @@
         font-size: 18px;
         opacity: 90%;
     }
-
-
-
-
-
-
-
-
-
     /* !!!!!!!!!!!!! */
     .start-section__banner {
         display: flex;
@@ -167,12 +159,11 @@
         align-items: center;
         flex-direction: column;
         position: relative;
-        top: 245px;
+        top: 20px;
         width: 264.84px;
-        left: 50%;
-        transform: translateX(-50%);
         gap: 28px;
         opacity: 90%;
+        z-index: 1;
     }
 
     .start-section__banner-item {
@@ -219,8 +210,6 @@
         position: relative;
     }
 
-
-
     .start-section__banner-item-image1 {
         max-width: 39.26px;
         max-height: 39.26px;
@@ -229,7 +218,8 @@
         height: auto;
         margin: 8px 8px 8px 3.36px;
     }
-        .start-section__banner-item-image2 {
+
+    .start-section__banner-item-image2 {
         max-width: 39.8px;
         max-height: 39.8px;
         min-width: 39.8px;
@@ -238,7 +228,7 @@
         margin: 8px 8px 8px 2.82px;
     }
 
-            .start-section__banner-item-image3 {
+    .start-section__banner-item-image3 {
         max-width: 50.63px;
         max-height: 50.63px;
         min-width: 50.63px;
