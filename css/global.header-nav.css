@@ -52,7 +52,7 @@
   padding: 120px 0;
   gap: 5px;
   z-index: 1;
-  background-color: rgb(62, 97, 106);
+  background-color: #32626b;
   opacity: 1;
 }
 
@@ -147,7 +147,7 @@
 }
 
 .line-menu {
-  background-color: rgb(22, 58, 69);
+  background-color: #32626b;
   border-radius: 5px;
   width: 100%;
   height: 2.5px;
