@@ -21,7 +21,7 @@
                         class="header__nav-menu-top-title-span">нерухомості</span></p>
             </div>
             <ul class="header__nav-list nav-list">
-                <li class="nav-list__link"><a href="index.html" class="menu__element-link">Головна</a>
+                <li class="nav-list__link general-link"><a href="index.html" class="menu__element-link">Головна</a>
                 </li>
                 <li class="nav-list__link"><a href="#our-advantages" class="menu__element-link">Наші переваги</a>
                 </li>
@@ -34,22 +34,69 @@
                 <li class="nav-list__link"><a href="#footer" class="menu__element-link">Контакти</a>
                 </li>
             </ul>
-            <div>
-                <p>Запрошуємо до співпраці!</p>
+            <div class="header-nav__bottom-general">
+                <div class="header-nav__bottom">
+                    <p class="header-nav__bottom-text">Запрошуємо до співпраці!</p>
+                </div>
+                <div class="header__nav-icons">
+                    <a href="https://www.instagram.com/leo_gold.brand/" target="_blank" class="social-link"
+                        aria-label="Instagram">
+                        <img src="img/icons/instagram-logo.png" alt="Instagram" class="social-icon">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61577797434337" target="_blank" class="social-link"
+                        aria-label="Facebook">
+                        <img src="img/icons/facebook-logo.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://t.me/leo_gold_brand" target="_blank" class="social-link" aria-label="Telegram">
+                        <img src="img/icons/telegram-logo.png" alt="Telegram" class="social-icon">
+                    </a>
+                </div>
+                <div class="header-nav__bottom2">
+                    <a href="tel:+380999999999" class="phone-link">
+                        <p class="global-header__contacts-number">+38 (099) 999 99 99</p>
+                    </a>
+                    <a class="global-header__contacts-email"
+                        href="mailto:spn@support@gmail.com">spn@support@gmail.com</a>
+                </div>
             </div>
-            <div class="header__nav-icons">
-                <a href="https://www.instagram.com/leo_gold.brand/" target="_blank" class="social-link"
-                    aria-label="Instagram">
-                    <img src="img/icons/instagram-logo.png" alt="Instagram" class="social-icon">
+            <div class="header__nav-menu-info">
+                <p class="header__nav-menu-info-title"><span class="header__nav-menu-info-title-span">Пн.-Пт. 9:00 -
+                        18:00</span></p>
+                <p class="header__nav-menu-info-title">м.Київ, пл.Свободи 17</p>
+                <a href="tel:+380999999999" class="phone-link">
+                    <p class="global-header__contacts-number">+38 (099) 999 99 99</p>
                 </a>
-                <a href="https://www.facebook.com/profile.php?id=61577797434337" target="_blank" class="social-link"
-                    aria-label="Facebook">
-                    <img src="img/icons/facebook-logo.png" alt="Facebook" class="social-icon">
-                </a>
-                <a href="https://t.me/leo_gold_brand" target="_blank" class="social-link" aria-label="Telegram">
-                    <img src="img/icons/telegram-logo.png" alt="Telegram" class="social-icon">
-                </a>
+                <button id="callbackBtn" class="callback-button">Зворотній зв’язок</button>
             </div>
         </div>
     </div>
 </nav>
+
+<!-- Модальне вікно -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+    <p>Вітання!</p>
+  </div>
+</div>
+
+<script>
+    const modal = document.getElementById('modal');
+const btn = document.getElementById('callbackBtn');
+const closeBtn = document.getElementById('closeModal');
+
+btn.onclick = () => {
+  modal.style.display = 'block';
+}
+
+closeBtn.onclick = () => {
+  modal.style.display = 'none';
+}
+
+window.onclick = (event) => {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
+}
+
+</script>

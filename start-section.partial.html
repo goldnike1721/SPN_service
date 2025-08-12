@@ -1,5 +1,6 @@
 <section id="our-advantages" class="start-section__general">
     <img class="start-section__image" src="img/start/start-background.png" alt="">
+    <div class="start-section__background-dop"></div>
     <div class="start-section__content">
         <h2 class="start-section__title">Ми дуже раді, що Ви завітали на наш сайт</h2>
         <div start-section__text-block>
@@ -87,11 +88,104 @@
             </div>
         </div>
     </div>
+    <div class="start-section__form-general">
+        <div class="start-section__form-title">
+            <p class="start-section__form-title-text">Є запитання?</p>
+            <p class="start-section__form-title-text">Отримайте</p>
+            <p class="start-section__form-title-text">безкоштовну консультацію</p>
+        </div>
+
+        <form class="start-section__form" action="#" method="post">
+            <input type="text" name="name" placeholder="Ім'я" class="start-section__input" required>
+            <input type="tel" name="phone" placeholder="Номер телефону" class="start-section__input" required>
+            <input type="email" name="email" placeholder="E-mail" class="start-section__input" required>
+            <button type="submit" class="start-section__button">Отримати консультацію</button>
+        </form>
+    </div>
+
 </section>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Niconne&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
+
+<style>
+    .start-section__form-general {
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+        padding: 46px 36px;
+        z-index: 1;
+        margin-top: 117px;
+        border: 1.89px solid #ffffff;
+        border-radius: 40px;
+
+    }
+
+    .start-section__form-title-text {
+        font-family: "Karla", sans-serif;
+        font-size: 15px;
+        color: #fff;
+        font-family: var(--text-font-family);
+        font-weight: 500;
+        margin: 0;
+        opacity: 90%;
+    }
+
+    .start-section__form {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        margin-top: 113.31px;
+    }
+
+    .start-section__input {
+        background: transparent;
+        border: 1.7px solid rgba(255, 255, 255, 0.4);
+        padding: 10px 15px;
+        font-size: 13px;
+        font-family: var(--text-font-family);
+        color: #fff;
+        border-radius: 30.72px;
+        outline: none;
+        transition: border-color 0.3s ease;
+        width: 263.45px;
+
+    }
+
+    .start-section__input::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .start-section__input:focus {
+        border-color: #008aa2;
+    }
+
+    .start-section__button {
+        background-color: #008AA2;
+        color: #fff;
+        font-size: 13.21px;
+        font-weight: 700;
+        padding: 12px;
+        border: none;
+        border-radius: 30.72px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 35px;
+        width: 263.45px;
+        opacity: 90%;
+    }
+
+    .start-section__button:hover {
+        background-color: rgba(0, 138, 162, 0.8);
+    }
+</style>
+
+
+
+
+
+<style>
     .start-section__general {
         position: relative;
         height: 100vh;
@@ -109,11 +203,10 @@
         height: 100%;
         transform: translate(-50%, 0%) scale(2.2);
         object-fit: cover;
-
-        background-color: rgb(62, 97, 106);
-        mix-blend-mode: multiply;
-        /* накладає колір на картинку */
+        /* background-color: rgb(62, 97, 106);
+        mix-blend-mode: multiply; */
     }
+
     .start-section__content {
         position: relative;
         top: 106px;
@@ -130,7 +223,7 @@
     }
 
     .start-section__title {
-        font-family: "Karla", sans-serif;
+        font-family: var(--text-font-family);
         font-weight: 600;
         font-size: 32px;
     }
@@ -140,18 +233,19 @@
     }
 
     .start-section__text {
-        font-family: "Karla", sans-serif;
+        font-family: var(--text-font-family);
         font-weight: 600;
         font-size: 20px;
     }
 
     .start-section__tex-bottom {
         padding-top: 20px;
-        font-family: "Karla", sans-serif;
+        font-family: var(--text-font-family);
         font-weight: 600;
         font-size: 18px;
         opacity: 90%;
     }
+
     /* !!!!!!!!!!!!! */
     .start-section__banner {
         display: flex;
@@ -168,7 +262,8 @@
 
     .start-section__banner-item {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: space-evenly;
         border: 1.8px solid #fff;
         padding: 8px;
         border-radius: 40px;
@@ -177,7 +272,7 @@
     }
 
     .start-section__banner-item-title-text {
-        font-family: "Karla", sans-serif;
+        font-family: var(--text-font-family);
         font-weight: 700;
         font-size: 17.55px;
         color: #fff;
@@ -193,7 +288,7 @@
     }
 
     .start-section__banner-item-text-text {
-        font-family: "Karla", sans-serif;
+        font-family: var(--text-font-family);
         font-weight: 500;
         font-size: 17.55px;
         color: #fff;
@@ -206,8 +301,8 @@
     .start-section__banner-item-content {
         display: flex;
         flex-direction: column;
-        top: 13px;
-        position: relative;
+        /* top: 13px;
+        position: relative; */
     }
 
     .start-section__banner-item-image1 {
@@ -235,5 +330,19 @@
         min-height: 50.63px;
         height: auto;
         margin: 8px 0px 8px 0px;
+    }
+
+    @media (min-width: 1024px) {
+        .start-section__image {
+            transform: translate(-50%, -39.1%) scale(2.2);
+        }
+
+        .start-section__background-dop {
+            width: 100%;
+            height: 454.15px;
+            z-index: 111;
+            background-color: rgba(0, 138, 162, 0.4);
+            position: absolute;
+        }
     }
 </style>
