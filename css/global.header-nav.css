@@ -239,7 +239,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  transform: translateY(-57px);
+  transform: translateY(-51px);
   opacity: 90%;
 }
 
@@ -248,7 +248,7 @@
   color: #ffffff;
   font-family: var(--text-font-family);
   font-weight: 500;
-  font-size: 13.55px;
+  font-size: 10px;
 }
 
 .header__nav-menu-top-title-span {
@@ -307,6 +307,16 @@
 
 .close:hover {
   color: black;
+}
+
+@media (min-width: 400px) {
+  .header__nav-menu-top {
+    transform: translateY(-57px);
+  }
+
+  .header__nav-menu-top-title {
+    font-size: 13.55px;
+  }
 }
 
 @media (min-width: 500px) {
