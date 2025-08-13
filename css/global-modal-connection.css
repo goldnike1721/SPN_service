@@ -1,0 +1,162 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    background: white url('/img/modal-connect/modal-connect.webp') center/cover no-repeat;
+    transform: translateY(-2px) scale(1.01);
+}
+
+.modal-content {
+    padding: 41px;
+    border-radius: 28px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    border: 1.5px solid #fff;
+    color: #000;
+    margin: 50% 20px;
+}
+
+.modal-content__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #fff;
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 41px;
+    right: 41px;
+    z-index: 111;
+}
+
+.close {
+    font-size: 15px;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.modal-title {
+    font-family: var(--text-font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    opacity: 90%;
+    text-align: start;
+    margin-bottom: 7px;
+}
+
+.modal-subtitle {
+    font-family: var(--text-font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    opacity: 90%;
+    text-align: start;
+}
+
+.modal-time {
+    margin-top: 14px;
+}
+
+.modal-hour-select,
+.modal-minutes-select {
+    width: 50.07px;
+}
+
+.modal-day-select {
+    width: 87.87px;
+}
+
+.modal-hour-select,
+.modal-minutes-select,
+.modal-day-select {
+    height: 28.12px;
+    border-radius: 28px;
+    font-size: 12px;
+    padding: 6px 14px;
+    border: 1.5px solid #ffffff;
+    background-color: transparent;
+    color: #fff;
+    opacity: 90%;
+    background-color: transparent;
+}
+
+.modal-hour-select,
+.modal-minutes-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url('/img/modal-connect/arrow_drop_up.png') no-repeat right 4px top 0px / 15px 22px;
+}
+
+.modal-day-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent url('/img/modal-connect/arrow_drop_up-2.png') no-repeat right 6px top 10px / 10px 6px;
+}
+
+.modal-time select:focus {
+    outline: none;
+    border-color: #fff;
+    box-shadow: none;
+}
+
+.modal-day-input__general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 21px;
+    margin-top: 21px;
+}
+
+.modal-day-input {
+    background: transparent;
+    border: 1.7px solid rgba(255, 255, 255);
+    padding: 7px 11px;
+    font-size: 12px;
+    font-family: var(--text-font-family);
+    color: #fff;
+    border-radius: 28.12px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 197px;
+}
+
+.modal-day-input__phone {
+    font-family: var(--text-font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    opacity: 90%;
+    margin-top: 7px;
+}
+
+.modal-day-input__general-phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal-btn {
+    background-color: #008AA2;
+    color: #fff;
+    font-family: var(--text-font-family);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 7px 21px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 21px;
+    width: 166.15px;
+    opacity: 90%;
+}

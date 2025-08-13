@@ -1,0 +1,580 @@
+.global-footer__general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 46px;
+}
+
+.global-footer__block-top,
+.global-footer__block-bottom {
+    width: 100%;
+    background-color: #003B46;
+}
+
+.global-footer__block-top {
+    padding: 14px 0;
+}
+
+.global-footer__block-bottom {
+    height: 31.86px;
+    margin: 24px 0 16px 0;
+}
+
+.global-footer__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.global-footer__title-text {
+    font-family: var(--text-font-family);
+    font-weight: 400;
+    font-size: 9px;
+    color: #fff;
+    opacity: 90%;
+}
+
+.global-footer__logo-image {
+    width: 39.08px;
+    height: 37.91px;
+}
+
+.global-footer__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.global-footer__text-welcome {
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 9px;
+    color: #fff;
+    opacity: 90%;
+}
+
+.global-footer__text-soc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.global-footer__text-social {
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 9px;
+    color: #fff;
+    opacity: 90%;
+    margin-right: 3px;
+}
+
+.global-footer__nav-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.global-footer__social-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.global-footer__email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 10px;
+}
+
+.global-footer__email-text {
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 9px;
+    color: #fff;
+    opacity: 90%;
+}
+
+.global-footer__email-link {
+    text-decoration: none;
+    font-family: var(--text-font-family);
+    font-weight: 400;
+    font-size: 9px;
+    color: #fff;
+    opacity: 90%;
+}
+
+.global-footer__social-icon {
+    filter: brightness(0) invert(1);
+}
+
+.global-footer__phone-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 3px;
+}
+
+.global-footer__phone-image {
+    width: 10.6px;
+    height: 10.6px;
+}
+
+.global-footer__phone-link {
+    text-decoration: none;
+}
+
+.global-footer__contacts-number {
+    text-decoration: none;
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 9px;
+    color: #fff;
+    opacity: 90%;
+}
+
+@media (min-width: 425px) {
+
+    .global-footer__text-welcome,
+    .global-footer__title-text,
+    .global-footer__text-social,
+    .global-footer__email-text,
+    .global-footer__email-link,
+    .global-footer__contacts-number {
+        font-size: 13px;
+    }
+
+    .global-footer__title {
+        gap: 6px;
+    }
+
+    .global-footer__logo-image {
+        width: 44.33px;
+        height: 43px;
+    }
+
+    .global-footer__social-icon {
+        width: 17px;
+        height: 17px;
+    }
+
+    .global-footer__phone-image {
+        width: 13.6px;
+        height: 13.6px;
+    }
+}
+
+@media (min-width: 500px) {
+    .global-footer__text-welcome,
+    .global-footer__title-text,
+    .global-footer__text-social,
+    .global-footer__email-text,
+    .global-footer__email-link,
+    .global-footer__contacts-number {
+        font-size: 15px;
+    }
+
+    .global-footer__title {
+        gap: 8px;
+    }
+
+    .global-footer__logo-image {
+        width: 48.45px;
+        height: 47px;
+    }
+
+    .global-footer__social-icon {
+        width: 19px;
+        height: 19px;
+    }
+
+    .global-footer__phone-image {
+        width: 15.6px;
+        height: 15.6px;
+    }
+
+    .global-footer__block-top {
+        padding: 17px 0;
+    }
+}
+
+@media (min-width: 767px) {
+
+    .global-footer__text-welcome,
+    .global-footer__title-text,
+    .global-footer__text-social,
+    .global-footer__email-text,
+    .global-footer__email-link,
+    .global-footer__contacts-number {
+        font-size: 22px;
+    }
+
+    .global-footer__title {
+        gap: 10px;
+    }
+
+    .global-footer__logo-image {
+        width: 93.8px;
+        height: 90.97px;
+    }
+
+    .global-footer__social-icon {
+        width: 33.66px;
+        height: 33.66px;
+    }
+
+    .global-footer__phone-image {
+        width: 25.4px;
+        height: 25.4px;
+    }
+
+    .global-footer__block-top {
+        padding: 33px 0;
+    }
+
+    .global-footer__general {
+        padding-top: 111px;
+    }
+
+    .global-footer__block-bottom {
+        height: 76.5px;
+        margin: 57px 0 40px 0;
+    }
+
+    .global-footer__text-soc,
+    .global-footer__email,
+    .global-footer__phone-block,
+    .global-footer__text {
+        margin-top: 20px;
+    }
+
+    .global-footer__text-social,
+    .global-footer__email {
+        margin-right: 8px;
+    }
+
+    .global-footer__nav-icons {
+        gap: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .global-footer__block-top {
+        max-width: 773.87px;
+    }
+
+    .global-footer__text-welcome,
+    .global-footer__title-text,
+    .global-footer__text-social,
+    .global-footer__email-text,
+    .global-footer__email-link,
+    .global-footer__contacts-number {
+        font-size: 9px;
+    }
+
+    .global-footer__title {
+        gap: 7px;
+    }
+
+    .global-footer__logo-image {
+        width: 40.31px;
+        height: 39.1px;
+    }
+
+    .global-footer__social-icon {
+        width: 9.6px;
+        height: 9.6px;
+    }
+
+    .global-footer__phone-image {
+        width: 11.7px;
+        height: 11.7px;
+    }
+
+    .global-footer__block-top {
+        padding: 50px 0;
+    }
+
+    .global-footer__general {
+        padding-top: 25px;
+    }
+
+    .global-footer__block-bottom {
+        height: 68.28px;
+        margin: 36px 0 25px 0;
+    }
+
+    .global-footer__text-soc,
+    .global-footer__email,
+    .global-footer__phone-block,
+    .global-footer__text {
+        margin-top: 16px;
+    }
+
+    .global-footer__text-social,
+    .global-footer__email {
+        margin-right: 2px;
+    }
+
+    .global-footer__nav-icons {
+        gap: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .global-footer__block-top {
+        max-width: 850px;
+    }
+
+    .global-footer__text-welcome,
+    .global-footer__title-text,
+    .global-footer__text-social,
+    .global-footer__email-text,
+    .global-footer__email-link,
+    .global-footer__contacts-number {
+        font-size: 13px;
+    }
+
+    .global-footer__title {
+        gap: 10px;
+    }
+
+    .global-footer__logo-image {
+        width: 51.55px;
+        height: 50px;
+    }
+
+    .global-footer__social-icon {
+        width: 13px;
+        height: 13px;
+    }
+
+    .global-footer__phone-image {
+        width: 14.7px;
+        height: 14.7px;
+    }
+
+    .global-footer__block-top {
+        padding: 60px 0;
+    }
+
+    .global-footer__general {
+        padding-top: 35px;
+    }
+
+    .global-footer__block-bottom {
+        height: 75px;
+        margin: 45px 0 35px 0;
+    }
+
+    .global-footer__text-soc,
+    .global-footer__email,
+    .global-footer__phone-block,
+    .global-footer__text {
+        margin-top: 18px;
+    }
+
+    .global-footer__text-social,
+    .global-footer__email {
+        margin-right: 5px;
+    }
+
+    .global-footer__nav-icons {
+        gap: 8px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .global-footer__block-top {
+        max-width: 900px;
+    }
+
+    .global-footer__text-welcome,
+    .global-footer__title-text,
+    .global-footer__text-social,
+    .global-footer__email-text,
+    .global-footer__email-link,
+    .global-footer__contacts-number {
+        font-size: 15px;
+    }
+
+    .global-footer__title {
+        gap: 12px;
+    }
+
+    .global-footer__logo-image {
+        width: 55.67px;
+        height: 54px;
+    }
+
+    .global-footer__social-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .global-footer__phone-image {
+        width: 16.7px;
+        height: 16.7px;
+    }
+
+    .global-footer__block-top {
+        padding: 65px 0;
+    }
+
+    .global-footer__general {
+        padding-top: 40px;
+    }
+
+    .global-footer__block-bottom {
+        height: 80px;
+        margin: 50px 0 40px 0;
+    }
+
+    .global-footer__text-soc,
+    .global-footer__email,
+    .global-footer__phone-block,
+    .global-footer__text {
+        margin-top: 20px;
+    }
+
+    .global-footer__text-social,
+    .global-footer__email {
+        margin-right: 7px;
+    }
+
+    .global-footer__nav-icons {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .global-footer__block-top {
+        max-width: 950px;
+    }
+
+    .global-footer__text-welcome,
+    .global-footer__title-text,
+    .global-footer__text-social,
+    .global-footer__email-text,
+    .global-footer__email-link,
+    .global-footer__contacts-number {
+        font-size: 16px;
+    }
+
+    .global-footer__title {
+        gap: 13px;
+    }
+
+    .global-footer__logo-image {
+        width: 58.76px;
+        height: 57px;
+    }
+
+    .global-footer__social-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .global-footer__phone-image {
+        width: 17.7px;
+        height: 17.7px;
+    }
+
+    .global-footer__block-top {
+        padding: 70px 0;
+    }
+
+    .global-footer__general {
+        padding-top: 45px;
+    }
+
+    .global-footer__block-bottom {
+        height: 85px;
+        margin: 55px 0 45px 0;
+    }
+
+    .global-footer__text-soc,
+    .global-footer__email,
+    .global-footer__phone-block,
+    .global-footer__text {
+        margin-top: 21px;
+    }
+
+    .global-footer__text-social,
+    .global-footer__email {
+        margin-right: 8px;
+    }
+
+    .global-footer__nav-icons {
+        gap: 11px;
+    }
+}
+
+@media (min-width: 1860px) {
+    .global-footer__block-top {
+        max-width: 1451px;
+    }
+
+    .global-footer__text-welcome,
+    .global-footer__title-text,
+    .global-footer__text-social,
+    .global-footer__email-text,
+    .global-footer__email-link,
+    .global-footer__contacts-number {
+        font-size: 18px;
+    }
+
+    .global-footer__title {
+        gap: 14px;
+    }
+
+    .global-footer__logo-image {
+        width: 75.59px;
+        height: 73.31px;
+    }
+
+    .global-footer__social-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .global-footer__phone-image {
+        width: 22px;
+        height: 22px;
+    }
+
+    .global-footer__block-top {
+        padding: 90px 0;
+    }
+
+    .global-footer__general {
+        padding-top: 50px;
+    }
+
+    .global-footer__block-bottom {
+        height: 128px;
+        margin: 68px 0 50px 0;
+    }
+
+    .global-footer__text-soc,
+    .global-footer__email,
+    .global-footer__phone-block,
+    .global-footer__text {
+        margin-top: 30px;
+    }
+
+    .global-footer__text-social,
+    .global-footer__email {
+        margin-right: 4px;
+    }
+
+    .global-footer__nav-icons {
+        gap: 10px;
+    }
+}
