@@ -1,0 +1,373 @@
+[
+    {
+        "id": "apartment",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-apartment",
+        "titleClass": "services-section__final-block-title-apartment",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид будівлі",
+                "options": [
+                    {
+                        "label": "В новобудові",
+                        "dataAttr": "data-radio-final-house"
+                    },
+                    {
+                        "label": "На вторинному ринку",
+                        "dataAttr": "data-radio-final-house"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "apartment-rent",
+        "wrapperClass": "services-section__final-block-wrapper",
+        "blockClass": "services-section__final-block",
+        "titleClass": "services-section__final-block-title",
+        "checkboxClass": "services-section__final-block-checkbox",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element",
+        "checkboxNameClass": "services-section__final-block-checkbox-name",
+        "groups": [
+            {
+                "title": "Оберіть вид будівлі",
+                "options": [
+                    {
+                        "label": "В новобудові",
+                        "dataAttr": "data-radio-final-house-rent-general"
+                    },
+                    {
+                        "label": "На вторинному ринку",
+                        "dataAttr": "data-radio-final-house-rent-general"
+                    }
+                ]
+            },
+            {
+                "title": "Оберіть вид оренди",
+                "options": [
+                    {
+                        "label": "Довгострокова",
+                        "dataAttr": "data-radio-final-house-rent"
+                    },
+                    {
+                        "label": "Подобова",
+                        "dataAttr": "data-radio-final-house-rent"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "room",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-room",
+        "titleClass": "services-section__final-block-title-apartment",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид будівлі",
+                "options": [
+                    {
+                        "label": "В новобудові",
+                        "dataAttr": "data-radio-final-room"
+                    },
+                    {
+                        "label": "На вторинному ринку",
+                        "dataAttr": "data-radio-final-room"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "room-rent",
+        "wrapperClass": "services-section__final-block-wrapper",
+        "blockClass": "services-section__final-block-room-rent",
+        "titleClass": "services-section__final-block-title",
+        "checkboxClass": "services-section__final-block-checkbox",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element",
+        "checkboxNameClass": "services-section__final-block-checkbox-name",
+        "groups": [
+            {
+                "title": "Оберіть вид будівлі",
+                "options": [
+                    {
+                        "label": "В новобудові",
+                        "dataAttr": "data-radio-final-room-rent-general"
+                    },
+                    {
+                        "label": "На вторинному ринку",
+                        "dataAttr": "data-radio-final-room-rent-general"
+                    }
+                ]
+            },
+            {
+                "title": "Оберіть вид оренди",
+                "options": [
+                    {
+                        "label": "Довгострокова",
+                        "dataAttr": "data-radio-final-room-rent"
+                    },
+                    {
+                        "label": "Подобова",
+                        "dataAttr": "data-radio-final-room-rent"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "house",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-house",
+        "titleClass": "services-section__final-block-title-apartment",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид будівлі",
+                "options": [
+                    {
+                        "label": "В новобудові",
+                        "dataAttr": "data-radio-final-house-some"
+                    },
+                    {
+                        "label": "На вторинному ринку",
+                        "dataAttr": "data-radio-final-house-some"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "house-rent",
+        "wrapperClass": "services-section__final-block-wrapper",
+        "blockClass": "services-section__final-block-house-rent",
+        "titleClass": "services-section__final-block-title",
+        "checkboxClass": "services-section__final-block-checkbox",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element",
+        "checkboxNameClass": "services-section__final-block-checkbox-name",
+        "groups": [
+            {
+                "title": "Оберіть вид будівлі",
+                "options": [
+                    {
+                        "label": "В новобудові",
+                        "dataAttr": "data-radio-final-house-some-rent-general"
+                    },
+                    {
+                        "label": "На вторинному ринку",
+                        "dataAttr": "data-radio-final-house-some-rent-general"
+                    }
+                ]
+            },
+            {
+                "title": "Оберіть вид оренди",
+                "options": [
+                    {
+                        "label": "Довгострокова",
+                        "dataAttr": "data-radio-final-house-some-rent"
+                    },
+                    {
+                        "label": "Подобова",
+                        "dataAttr": "data-radio-final-house-some-rent"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "garage",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-garage",
+        "titleClass": "services-section__final-block-title-apartment",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид будівлі",
+                "options": [
+                    {
+                        "label": "Для легкового авто",
+                        "dataAttr": "data-radio-final-garage"
+                    },
+                    {
+                        "label": "Для мікраовтобуса",
+                        "dataAttr": "data-radio-final-garage"
+                    },
+                    {
+                        "label": "Для вантажівки/автобуса",
+                        "dataAttr": "data-radio-final-garage"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "garage-rent",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-garage",
+        "titleClass": "services-section__final-block-title-apartment",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид будівлі",
+                "options": [
+                    {
+                        "label": "Для легкового авто",
+                        "dataAttr": "data-radio-final-garage-rent-general"
+                    },
+                    {
+                        "label": "Для мікраовтобуса",
+                        "dataAttr": "data-radio-final-garage-rent-general"
+                    },
+                    {
+                        "label": "Для вантажівки/автобуса",
+                        "dataAttr": "data-radio-final-garage-rent-general"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "earth",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-earth",
+        "titleClass": "services-section__final-block-title-earth",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид земельної ділянки",
+                "options": [
+                    {
+                        "label": "Під забудову",
+                        "dataAttr": "data-radio-final-earth"
+                    },
+                    {
+                        "label": "Сільськогосродорського призначення",
+                        "dataAttr": "data-radio-final-earth"
+                    },
+                    {
+                        "label": "Комерційного призначення",
+                        "dataAttr": "data-radio-final-earth"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "earth-rent",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-earth",
+        "titleClass": "services-section__final-block-title-earth",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид земельної ділянки",
+                "options": [
+                    {
+                        "label": "Під забудову",
+                        "dataAttr": "data-radio-final-earth-rent-general"
+                    },
+                    {
+                        "label": "Сільськогосродорського призначення",
+                        "dataAttr": "data-radio-final-earth-rent-general"
+                    },
+                    {
+                        "label": "Комерційного призначення",
+                        "dataAttr": "data-radio-final-earth-rent-general"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "commerce",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-commerce",
+        "titleClass": "services-section__final-block-title-apartment",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид приміщення",
+                "options": [
+                    {
+                        "label": "Офісне приміщення",
+                        "dataAttr": "data-radio-final-commerce"
+                    },
+                    {
+                        "label": "Комерційне приміщення",
+                        "dataAttr": "data-radio-final-commerce"
+                    },
+                    {
+                        "label": "Складcьке приміщення",
+                        "dataAttr": "data-radio-final-commerce"
+                    },
+                    {
+                        "label": "Спеціальне приміщення",
+                        "dataAttr": "data-radio-final-commerce"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "commerce-rent",
+        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "blockClass": "services-section__final-block-commerce",
+        "titleClass": "services-section__final-block-title-apartment",
+        "checkboxClass": "services-section__final-block-checkbox-apartment",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "groups": [
+            {
+                "title": "Оберіть вид приміщення",
+                "options": [
+                    {
+                        "label": "Офісне приміщення",
+                        "dataAttr": "data-radio-final-commerce-rent-general"
+                    },
+                    {
+                        "label": "Комерційне приміщення",
+                        "dataAttr": "data-radio-final-commerce-rent-general"
+                    },
+                    {
+                        "label": "Складcьке приміщення",
+                        "dataAttr": "data-radio-final-commerce-rent-general"
+                    },
+                    {
+                        "label": "Спеціальне приміщення",
+                        "dataAttr": "data-radio-final-commerce-rent-general"
+                    }
+                ]
+            }
+        ]
+    }
+]

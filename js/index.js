@@ -2,6 +2,7 @@ function init() {
     import('./global.burger-menu.js');
     // import('./work-stages.js');
     import('./global-modal-connection.js');
+    import('./services.js');
 
 }
 

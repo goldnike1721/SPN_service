@@ -1,0 +1,567 @@
+.services-section__general {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-section__block-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 15px;
+}
+
+.services-section__general-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    transform: translate(-50%, -48%) scale(1.2);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.services-section__title-text {
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    opacity: 90%;
+    margin-bottom: 35px;
+}
+
+.services-section__real-estate {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 46px 36px;
+    min-width: 278.47px;
+}
+
+.services-section__estate-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section__estate-title-text {
+    text-align: center;
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    opacity: 90%;
+    width: 121px;
+}
+
+.services-section__estate-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 50px;
+}
+
+.services-section__estate-checkbox-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.services-section__estate-checkbox-box-element {
+    width: 21.6px;
+    height: 21.6px;
+    border: 1.5px solid #fff;
+    border-radius: 6.5px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.services-section__estate-checkbox-name-text {
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12.2px;
+    color: #fff;
+    opacity: 90%;
+}
+
+.services-section__estate-checkbox-box.active .services-section__estate-checkbox-box-element {
+    background-color: transparent;
+    position: relative;
+}
+
+.services-section__estate-checkbox-box.active .services-section__estate-checkbox-box-element::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5.5px;
+    width: 8.14px;
+    height: 6.27px;
+    background-image: url(../img/services/download_done.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.services-section__arrow-image {
+    width: 12.9px;
+    height: 9.47px;
+    transform: rotate(90deg);
+    margin: 35px;
+}
+
+.services-section__agreement {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 46px 36px;
+    min-width: 278.47px;
+}
+
+.services-section__agreement-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section__agreement-title-text {
+    text-align: center;
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    opacity: 90%;
+    width: 64px;
+}
+
+.services-section__agreement-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 50px;
+}
+
+.services-section__agreement-checkbox-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.services-section__agreement-checkbox-box-element {
+    width: 21.6px;
+    height: 21.6px;
+    border: 1.5px solid #fff;
+    border-radius: 6.5px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.services-section__agreement-checkbox-name-text {
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12.2px;
+    color: #fff;
+    opacity: 90%;
+}
+
+.services-section__agreement-checkbox-box.active .services-section__agreement-checkbox-box-element {
+    background-color: transparent;
+    position: relative;
+}
+
+.services-section__agreement-checkbox-box.active .services-section__agreement-checkbox-box-element::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5.5px;
+    width: 8.14px;
+    height: 6.27px;
+    background-image: url(../img/services/download_done.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.services-section__final-standart-image {
+    width: 278.47px;
+    height: 368.91px;
+    border-radius: 30px;
+}
+
+.arrow-image-end {
+    margin-bottom: 24px;
+}
+
+.services-section__button-active {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8px 13px;
+    border: 0;
+    border-radius: 30px;
+    background: #0b90a3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: var(--text-font-family);
+    cursor: pointer;
+    height: 30.56px;
+    width: 278.47px;
+    opacity: 90%;
+}
+
+
+
+
+/* !!!!!!!!!  КВАРТИРИ    ===    ОРЕНДА / ЗДАТИ В ОРЕНДУ !!!!!!!!!!!!!!!!!!!!!  */
+.services-section__final-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 28px;
+    min-width: 278.47px;
+    background-image: url("/img/services/apartment.webp");
+    background-size: 100% 200%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+}
+
+.services-section__final-block-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section__final-block-title-text {
+    text-align: center;
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    opacity: 90%;
+    width: 74px;
+}
+
+.services-section__final-block-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 33.5px;
+}
+
+.services-section__final-block-checkbox-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.services-section__final-block-checkbox-box-element {
+    width: 21.6px;
+    height: 21.6px;
+    border: 1.5px solid #fff;
+    border-radius: 6.5px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.services-section__final-block-checkbox-name-text {
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12.2px;
+    color: #fff;
+    opacity: 90%;
+}
+
+.services-section__final-block-checkbox-box.active .services-section__final-block-checkbox-box-element {
+    background-color: transparent;
+    position: relative;
+}
+
+.services-section__final-block-checkbox-box.active .services-section__final-block-checkbox-box-element::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5.5px;
+    width: 8.14px;
+    height: 6.27px;
+    background-image: url(../img/services/download_done.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.services-section__final-block-general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-section__final-block-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* ! ! ! ! ! ! ! ! ! КВАРТИРИ===КУПИТИ / ПРОДАТИ ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! ! */
+.services-section__final-block-apartment {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 36px;
+    min-width: 278.47px;
+    background-image: url("/img/services/apartment.webp");
+    background-size: 150% 100%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+    height: 369px;
+}
+
+.services-section__final-block-title-apartment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section__final-block-title-apartment-text {
+    text-align: center;
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    opacity: 90%;
+    width: 74px;
+}
+
+.services-section__final-block-checkbox-apartment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 33.5px;
+}
+
+.services-section__final-block-checkbox-box-apartment {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.services-section__final-block-checkbox-box-element-apartment {
+    min-width: 21.6px;
+    min-height: 21.6px;
+    max-width: 21.6px;
+    max-height: 21.6px;
+    border: 1.5px solid #fff;
+    border-radius: 6.5px;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.services-section__final-block-checkbox-name-apartment-text {
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12.2px;
+    color: #fff;
+    opacity: 90%;
+}
+
+.services-section__final-block-checkbox-box-apartment.active .services-section__final-block-checkbox-box-element-apartment {
+    background-color: transparent;
+    position: relative;
+}
+
+.services-section__final-block-checkbox-box-apartment.active .services-section__final-block-checkbox-box-element-apartment::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5.5px;
+    width: 8.14px;
+    height: 6.27px;
+    background-image: url(../img/services/download_done.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.services-section__final-block-general-apartment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-section__final-block-wrapper-apartment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.services-section__final-block-bottom-apartment {
+    background-position: bottom 0 center;
+}
+
+.services-section__final-block-house {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 36px;
+    min-width: 278.47px;
+    background-image: url("/img/services/standart-house-some.webp");
+    background-size: 150% 100%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+    height: 369px;
+}
+
+.services-section__final-block-house-rent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 28px;
+    min-width: 278.47px;
+    background-image: url("/img/services/standart-house-some.webp");
+    background-size: 150% 200%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+}
+
+.services-section__final-block-room {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 36px;
+    min-width: 278.47px;
+    background-image: url("/img/services/standart-house.webp");
+    background-size: 150% 200%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+    height: 369px;
+}
+
+.services-section__final-block-room-rent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 28px;
+    min-width: 278.47px;
+    background-image: url("/img/services/standart-house.webp");
+    background-size: 100% 200%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+}
+
+.services-section__final-block-garage {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 36px;
+    min-width: 278.47px;
+    background-image: url("/img/services/garage.webp");
+    background-size: 100%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+    height: 369px;
+}
+
+.services-section__final-block-earth {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 36px;
+    min-width: 278.47px;
+    background-image: url("/img/services/earth.webp");
+    background-size: 100% 100%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+    height: 369px;
+    width: 278.47px;
+}
+
+.services-section__final-block-commerce {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1.5px solid #fff;
+    border-radius: 45px;
+    padding: 36px;
+    min-width: 278.47px;
+    background-image: url("/img/services/commerce.webp");
+    background-size: 100% 100%;
+    background-position: top 0 center;
+    background-repeat: no-repeat;
+    height: 369px;
+    width: 278.47px;
+}
+
+.services-section__final-block-title-earth-text {
+    text-align: center;
+    font-family: var(--text-font-family);
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    opacity: 90%;
+    width: 149px;
+}
+
+.services-section__final-block-title-earth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section__final-block-bottom {
+    background-position: bottom 0 center;
+}
