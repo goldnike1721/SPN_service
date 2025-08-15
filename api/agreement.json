@@ -1,0 +1,18 @@
+[
+    {
+        "id": "opt-buy",
+        "label": "Купити"
+    },
+    {
+        "id": "opt-sell",
+        "label": "Продати"
+    },
+    {
+        "id": "opt-rent",
+        "label": "Орендувати"
+    },
+    {
+        "id": "opt-lease-out",
+        "label": "Здати в оренду"
+    }
+]

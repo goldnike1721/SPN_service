@@ -26,13 +26,13 @@
     },
     {
         "id": "apartment-rent",
-        "wrapperClass": "services-section__final-block-wrapper",
-        "blockClass": "services-section__final-block",
-        "titleClass": "services-section__final-block-title",
-        "checkboxClass": "services-section__final-block-checkbox",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element",
-        "checkboxNameClass": "services-section__final-block-checkbox-name",
+        "wrapperClass": "services-section__final-block-wrapper-apartment-rent",
+        "blockClass": "services-section__final-block-apartment-rent",
+        "titleClass": "services-section__final-block-title-apartment-rent",
+        "checkboxClass": "services-section__final-block-checkbox-apartment-rent",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment-rent",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment-rent",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment-rent",
         "groups": [
             {
                 "title": "Оберіть вид будівлі",
@@ -64,13 +64,13 @@
     },
     {
         "id": "room",
-        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "wrapperClass": "services-section__final-block-wrapper-room",
         "blockClass": "services-section__final-block-room",
-        "titleClass": "services-section__final-block-title-apartment",
-        "checkboxClass": "services-section__final-block-checkbox-apartment",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
-        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "titleClass": "services-section__final-block-title-room",
+        "checkboxClass": "services-section__final-block-checkbox-room",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-room",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-room",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-room",
         "groups": [
             {
                 "title": "Оберіть вид будівлі",
@@ -89,13 +89,13 @@
     },
     {
         "id": "room-rent",
-        "wrapperClass": "services-section__final-block-wrapper",
+        "wrapperClass": "services-section__final-block-wrapper-room-rent",
         "blockClass": "services-section__final-block-room-rent",
-        "titleClass": "services-section__final-block-title",
-        "checkboxClass": "services-section__final-block-checkbox",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element",
-        "checkboxNameClass": "services-section__final-block-checkbox-name",
+        "titleClass": "services-section__final-block-title-room-rent",
+        "checkboxClass": "services-section__final-block-checkbox-room-rent",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-room-rent",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-room-rent",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-room-rent",
         "groups": [
             {
                 "title": "Оберіть вид будівлі",
@@ -127,13 +127,13 @@
     },
     {
         "id": "house",
-        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "wrapperClass": "services-section__final-block-wrapper-house",
         "blockClass": "services-section__final-block-house",
-        "titleClass": "services-section__final-block-title-apartment",
-        "checkboxClass": "services-section__final-block-checkbox-apartment",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
-        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "titleClass": "services-section__final-block-title-house",
+        "checkboxClass": "services-section__final-block-checkbox-house",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-house",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-house",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-house",
         "groups": [
             {
                 "title": "Оберіть вид будівлі",
@@ -152,13 +152,13 @@
     },
     {
         "id": "house-rent",
-        "wrapperClass": "services-section__final-block-wrapper",
+        "wrapperClass": "services-section__final-block-wrapper-house-rent",
         "blockClass": "services-section__final-block-house-rent",
-        "titleClass": "services-section__final-block-title",
-        "checkboxClass": "services-section__final-block-checkbox",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element",
-        "checkboxNameClass": "services-section__final-block-checkbox-name",
+        "titleClass": "services-section__final-block-title-house-rent",
+        "checkboxClass": "services-section__final-block-checkbox-house-rent",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-house-rent",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-house-rent",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-house-rent",
         "groups": [
             {
                 "title": "Оберіть вид будівлі",
@@ -190,13 +190,13 @@
     },
     {
         "id": "garage",
-        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "wrapperClass": "services-section__final-block-wrapper-garage",
         "blockClass": "services-section__final-block-garage",
-        "titleClass": "services-section__final-block-title-apartment",
-        "checkboxClass": "services-section__final-block-checkbox-apartment",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
-        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "titleClass": "services-section__final-block-title-garage",
+        "checkboxClass": "services-section__final-block-checkbox-garage",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-garage",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-garage",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-garage",
         "groups": [
             {
                 "title": "Оберіть вид будівлі",
@@ -219,13 +219,13 @@
     },
     {
         "id": "garage-rent",
-        "wrapperClass": "services-section__final-block-wrapper-apartment",
-        "blockClass": "services-section__final-block-garage",
-        "titleClass": "services-section__final-block-title-apartment",
-        "checkboxClass": "services-section__final-block-checkbox-apartment",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
-        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "wrapperClass": "services-section__final-block-wrapper-garage-rent",
+        "blockClass": "services-section__final-block-garage-rent",
+        "titleClass": "services-section__final-block-title-garage-rent",
+        "checkboxClass": "services-section__final-block-checkbox-garage-rent",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-garage-rent",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-garage-rent",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-garage-rent",
         "groups": [
             {
                 "title": "Оберіть вид будівлі",
@@ -248,13 +248,13 @@
     },
     {
         "id": "earth",
-        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "wrapperClass": "services-section__final-block-wrapper-earth",
         "blockClass": "services-section__final-block-earth",
         "titleClass": "services-section__final-block-title-earth",
-        "checkboxClass": "services-section__final-block-checkbox-apartment",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
-        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "checkboxClass": "services-section__final-block-checkbox-earth",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-earth",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-earth",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-earth",
         "groups": [
             {
                 "title": "Оберіть вид земельної ділянки",
@@ -264,7 +264,7 @@
                         "dataAttr": "data-radio-final-earth"
                     },
                     {
-                        "label": "Сільськогосродорського призначення",
+                        "label": "Сільськогосподарського призначення",
                         "dataAttr": "data-radio-final-earth"
                     },
                     {
@@ -277,13 +277,13 @@
     },
     {
         "id": "earth-rent",
-        "wrapperClass": "services-section__final-block-wrapper-apartment",
-        "blockClass": "services-section__final-block-earth",
-        "titleClass": "services-section__final-block-title-earth",
-        "checkboxClass": "services-section__final-block-checkbox-apartment",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
-        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "wrapperClass": "services-section__final-block-wrapper-earth-rent",
+        "blockClass": "services-section__final-block-earth-rent",
+        "titleClass": "services-section__final-block-title-earth-rent",
+        "checkboxClass": "services-section__final-block-checkbox-earth-rent",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-earth-rent",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-earth-rent",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-earth-rent",
         "groups": [
             {
                 "title": "Оберіть вид земельної ділянки",
@@ -293,7 +293,7 @@
                         "dataAttr": "data-radio-final-earth-rent-general"
                     },
                     {
-                        "label": "Сільськогосродорського призначення",
+                        "label": "Сільськогосподарського призначення",
                         "dataAttr": "data-radio-final-earth-rent-general"
                     },
                     {
@@ -306,13 +306,13 @@
     },
     {
         "id": "commerce",
-        "wrapperClass": "services-section__final-block-wrapper-apartment",
+        "wrapperClass": "services-section__final-block-wrapper-commerce",
         "blockClass": "services-section__final-block-commerce",
-        "titleClass": "services-section__final-block-title-apartment",
-        "checkboxClass": "services-section__final-block-checkbox-apartment",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
-        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "titleClass": "services-section__final-block-title-commerce",
+        "checkboxClass": "services-section__final-block-checkbox-commerce",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-commerce",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-commerce",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-commerce",
         "groups": [
             {
                 "title": "Оберіть вид приміщення",
@@ -339,13 +339,13 @@
     },
     {
         "id": "commerce-rent",
-        "wrapperClass": "services-section__final-block-wrapper-apartment",
-        "blockClass": "services-section__final-block-commerce",
-        "titleClass": "services-section__final-block-title-apartment",
-        "checkboxClass": "services-section__final-block-checkbox-apartment",
-        "checkboxBoxClass": "services-section__final-block-checkbox-box-apartment",
-        "checkboxElementClass": "services-section__final-block-checkbox-box-element-apartment",
-        "checkboxNameClass": "services-section__final-block-checkbox-name-apartment",
+        "wrapperClass": "services-section__final-block-wrapper-commerce-rent",
+        "blockClass": "services-section__final-block-commerce-rent",
+        "titleClass": "services-section__final-block-title-commerce-rent",
+        "checkboxClass": "services-section__final-block-checkbox-commerce-rent",
+        "checkboxBoxClass": "services-section__final-block-checkbox-box-commerce-rent",
+        "checkboxElementClass": "services-section__final-block-checkbox-box-element-commerce-rent",
+        "checkboxNameClass": "services-section__final-block-checkbox-name-commerce-rent",
         "groups": [
             {
                 "title": "Оберіть вид приміщення",

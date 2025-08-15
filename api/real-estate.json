@@ -1,0 +1,26 @@
+[
+    {
+        "id": "opt-apartment",
+        "label": "Квартира"
+    },
+    {
+        "id": "opt-room",
+        "label": "Кімната"
+    },
+    {
+        "id": "opt-house",
+        "label": "Будинок"
+    },
+    {
+        "id": "opt-garage",
+        "label": "Гараж"
+    },
+    {
+        "id": "opt-earth",
+        "label": "Земля"
+    },
+    {
+        "id": "opt-commerce",
+        "label": "Комерція"
+    }
+]
