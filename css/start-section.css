@@ -87,7 +87,7 @@
 .start-section__banner-item-title-text {
     font-family: var(--text-font-family);
     font-weight: 700;
-    font-size: 17.55px;
+    font-size: 17px;
     color: #fff;
     padding-bottom: 3px;
 }
@@ -103,7 +103,7 @@
 .start-section__banner-item-text-text {
     font-family: var(--text-font-family);
     font-weight: 500;
-    font-size: 17.55px;
+    font-size: 17px;
     color: #fff;
 }
 
@@ -147,7 +147,7 @@
     max-width: 400px;
     margin: auto;
     text-align: center;
-    padding: 46px 36px;
+    padding: 46px 22px;
     z-index: 1;
     margin-top: 117px;
     border: 1.89px solid #ffffff;
@@ -157,7 +157,7 @@
 
 .start-section__form-title-text {
     font-family: "Karla", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     color: #fff;
     font-family: var(--text-font-family);
     font-weight: 500;
@@ -176,7 +176,7 @@
     background: transparent;
     border: 1.7px solid rgba(255, 255, 255);
     padding: 10px 15px;
-    font-size: 13px;
+    font-size: 15px;
     font-family: var(--text-font-family);
     color: #fff;
     border-radius: 30.72px;
@@ -194,18 +194,21 @@
 }
 
 .start-section__button {
-    background-color: #008AA2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8px 13px;
+    border: 0;
+    border-radius: 30px;
+    background: #0b90a3;
     color: #fff;
-    font-family: var(--text-font-family);
-    font-size: 13.21px;
     font-weight: 700;
-    padding: 12px;
-    border: none;
-    border-radius: 30.72px;
+    font-size: 15px;
+    font-family: var(--text-font-family);
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 35px;
-    width: 214px;
+    height: 45px;
     opacity: 90%;
 }
 
@@ -231,6 +234,17 @@
     flex-direction: column;
 }
 
+
+@media (min-width: 425px) {
+    .start-section__input {
+        width: 230px;
+    }
+
+        .start-section__form-general {
+        padding: 46px;
+    }
+}
+
 @media (min-width: 640px) {
     .start-section__banner {
         display: grid;
@@ -239,6 +253,14 @@
 
     .wrapper-menu__general {
         margin-right: 20px;
+    }
+
+    .start-section__form-general {
+        padding: 46px 55px;
+    }
+
+    .start-section__input {
+        width: 270px;
     }
 }
 
@@ -555,13 +577,13 @@
         font-size: 36px;
     }
 
-        .start-section__background-dop {
+    .start-section__background-dop {
         height: 303.21px;
     }
 }
 
 @media (min-width: 1860px) {
- .start-section__title-desctop {
+    .start-section__title-desctop {
         font-size: 52px;
     }
 

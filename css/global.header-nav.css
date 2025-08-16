@@ -261,18 +261,23 @@
 }
 
 .callback-button {
-  background-color: #008AA2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 8px 51px;
+  border: 0;
+  border-radius: 30px;
+  background: #0b90a3;
   color: #fff;
+  font-weight: 700;
+  font-size: 15px;
   font-family: var(--text-font-family);
-  font-size: 13px;
-  font-weight: 400;
-  padding: 10px;
-  border: none;
-  border-radius: 30.72px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 15px;
+  height: 45px;
   opacity: 90%;
+  margin-top: 25px;
 }
 
 @media (min-width: 400px) {
@@ -500,6 +505,7 @@
     font-size: 11px;
     padding: 5px 16px;
     margin-top: 0;
+    height: 25px;
   }
 }
 
@@ -517,6 +523,7 @@
 
   .callback-button {
     font-size: 13px;
+    height: 30px;
   }
 
   .header__nav-list .menu__element-link {
@@ -583,6 +590,7 @@
 
   .callback-button {
     font-size: 18px;
+    height: 40px;
   }
 
   .header__nav-menu-info a {
