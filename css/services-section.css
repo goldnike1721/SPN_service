@@ -116,6 +116,12 @@
     background-size: contain;
 }
 
+.services-section__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .services-section__arrow-image {
     width: 24px;
     height: 17px;
@@ -774,49 +780,269 @@
 }
 
 @media (min-width: 1024px) {
-
-    #blocks-container {
+    .services-section__bottom-block-chackbox {
+        display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-auto-rows: auto;
     }
 
-    /* 1-й стовпець */
-    #blocks-container>div:nth-child(1) {
-        grid-column: 1;
-        grid-row: 1;
+    .services-section__general-image {
+        position: absolute;
+        width: 100%;
     }
 
-    /* 2-й стовпець */
-    #blocks-container>div:nth-child(2) {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    /* 3-й стовпець */
-    #blocks-container>div:nth-child(3) {
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    #blocks-container>div:nth-child(4) {
-        grid-column: 3;
-        grid-row: 2;
-    }
-
-    /* 4-й стовпець */
-    #blocks-container>div:nth-child(5) {
-        grid-column: 4;
-        grid-row: 1;
-    }
-
-    #blocks-container>div:nth-child(6) {
+    .services-section__bottom-block-chackbox>*:nth-child(7) {
         grid-column: 4;
         grid-row: 2;
+        transform: translateY(-30px);
     }
 
-    /* 5-й стовпець */
-    #blocks-container>div:nth-child(7) {
-        grid-column: 5;
-        grid-row: 1;
+    .services-section__bottom-block-chackbox>*:nth-child(8) {
+        display: grid;
+        justify-content: center;
+        grid-column: 3;
+        grid-row: 2;
+        transform: translateY(-30px);
+    }
+
+    .services-section__real-estate,
+    .services-section__agreement {
+        padding: 31px 24px;
+        min-width: 240px;
+        max-width: 240px;
+    }
+
+    .services-section__real-estate {
+        min-height: 297px;
+        max-height: 297px;
+    }
+
+    .services-section__estate-title-text,
+    .services-section__agreement-title-text {
+        font-size: 14px;
+        width: 120px;
+    }
+
+    .services-section__estate-checkbox-box-element,
+    .services-section__agreement-checkbox-box-element {
+        width: 19px;
+        height: 19px;
+    }
+
+    .services-section__estate-checkbox-name-text,
+    .services-section__agreement-checkbox-name-text {
+        font-size: 12px;
+    }
+
+    .services-section__estate-checkbox,
+    .services-section__agreement-checkbox {
+        gap: 11px;
+        padding-top: 35px;
+    }
+
+    .services-section__estate-checkbox-box.active .services-section__estate-checkbox-box-element::after,
+    .services-section__agreement-checkbox-box.active .services-section__agreement-checkbox-box-element::after {
+        top: 3.5px;
+        left: 2.5px;
+        width: 11px;
+        height: 12px;
+    }
+
+    .services-section__arrow-image {
+        width: 24px;
+        height: 17px;
+        transform: rotate(0deg);
+        margin: 30px;
+    }
+
+    .services-section__agreement-title-text {
+        width: 73px;
+    }
+
+    .services-section__final-standart-image {
+        width: 240px;
+        height: 297px;
+    }
+
+    .services-section__block-general {
+        padding: 55px 45px;
+    }
+
+    .services-section__final-block-title-apartment-rent-text,
+    .services-section__final-block-title-room-rent-text,
+    .services-section__final-block-title-house-rent-text,
+    .services-section__final-block-title-garage-rent-text,
+    .services-section__final-block-title-earth-rent-text,
+    .services-section__final-block-title-commerce-rent-text,
+    .services-section__final-block-title-apartment-text,
+    .services-section__final-block-title-room-text,
+    .services-section__final-block-title-house-text,
+    .services-section__final-block-title-garage-text,
+    .services-section__final-block-title-earth-text,
+    .services-section__final-block-title-commerce-text {
+        font-size: 14px;
+    }
+
+    .services-section__final-block-title-apartment-text,
+    .services-section__final-block-title-room-text,
+    .services-section__final-block-title-house-text,
+    .services-section__final-block-title-garage-text,
+    .services-section__final-block-title-earth-text,
+    .services-section__final-block-title-commerce-text {
+        width: 80px;
+    }
+
+    .services-section__final-block-checkbox-name-apartment-rent-text,
+    .services-section__final-block-checkbox-name-room-rent-text,
+    .services-section__final-block-checkbox-name-house-rent-text,
+    .services-section__final-block-checkbox-name-garage-rent-text,
+    .services-section__final-block-checkbox-name-earth-rent-text,
+    .services-section__final-block-checkbox-name-commerce-rent-text,
+    .services-section__final-block-checkbox-name-apartment-text,
+    .services-section__final-block-checkbox-name-room-text,
+    .services-section__final-block-checkbox-name-house-text,
+    .services-section__final-block-checkbox-name-garage-text,
+    .services-section__final-block-checkbox-name-earth-text,
+    .services-section__final-block-checkbox-name-commerce-text {
+        font-size: 12px;
+    }
+
+    .services-section__final-block-checkbox-apartment,
+    .services-section__final-block-checkbox-room,
+    .services-section__final-block-checkbox-house,
+    .services-section__final-block-checkbox-garage,
+    .services-section__final-block-checkbox-earth,
+    .services-section__final-block-checkbox-commerce {
+        gap: 11px;
+        padding-top: 35px;
+    }
+
+    .services-section__final-block-checkbox-box-element-apartment,
+    .services-section__final-block-checkbox-box-element-room,
+    .services-section__final-block-checkbox-box-element-house,
+    .services-section__final-block-checkbox-box-element-garage,
+    .services-section__final-block-checkbox-box-element-earth,
+    .services-section__final-block-checkbox-box-element-commerce {
+        min-width: 19px;
+        min-height: 19px;
+        max-width: 19px;
+        max-height: 19px;
+    }
+
+    .services-section__final-block-apartment,
+    .services-section__final-block-house,
+    .services-section__final-block-room,
+    .services-section__final-block-garage,
+    .services-section__final-block-earth,
+    .services-section__final-block-commerce,
+    .services-section__final-block-garage-rent,
+    .services-section__final-block-earth-rent,
+    .services-section__final-block-commerce-rent {
+        padding: 31px 24px;
+        min-height: 297px;
+        max-height: 297px;
+        min-width: 240px;
+        max-width: 240px;
+    }
+
+    [class*="checkbox-box-"].active>[class*="checkbox-box-element-"]::after {
+        top: 3.5px;
+        left: 2.5px;
+        width: 11px;
+        height: 12px;
+    }
+
+    .services-section__final-block-title-room-rent-text,
+    .services-section__final-block-title-house-rent-text,
+    .services-section__final-block-title-apartment-rent-text {
+        min-width: 120px;
+    }
+
+    .services-section__final-block-apartment-rent,
+    .services-section__final-block-house-rent,
+    .services-section__final-block-room-rent {
+        padding: 15px 35px;
+        min-width: 240px;
+        max-width: 240px;
+    }
+
+    .services-section__final-block-checkbox-apartment-rent,
+    .services-section__final-block-checkbox-room-rent,
+    .services-section__final-block-checkbox-house-rent {
+        gap: 11px;
+        padding-top: 24px;
+    }
+
+    .services-section__final-block-checkbox-box-element-apartment-rent,
+    .services-section__final-block-checkbox-box-element-room-rent,
+    .services-section__final-block-checkbox-box-element-house-rent,
+    .services-section__final-block-checkbox-box-element-garage-rent,
+    .services-section__final-block-checkbox-box-element-earth-rent,
+    .services-section__final-block-checkbox-box-element-commerce-rent {
+        min-width: 19px;
+        max-width: 19px;
+        min-height: 19px;
+        max-height: 19px;
+    }
+
+    .services-section__final-block-wrapper-apartment-rent,
+    .services-section__final-block-wrapper-room-rent,
+    .services-section__final-block-wrapper-house-rent,
+    .services-section__final-block-wrapper-garage-rent,
+    .services-section__final-block-wrapper-earth-rent,
+    .services-section__final-block-wrapper-commerce-rent {
+        gap: 10px;
+    }
+
+    .services-section__final-block-checkbox-garage-rent,
+    .services-section__final-block-checkbox-earth-rent,
+    .services-section__final-block-checkbox-commerce-rent {
+        gap: 11px;
+        padding-top: 35px;
+    }
+
+    .services-section__final-block-title-garage-rent-text {
+        width: 80px;
+    }
+
+    .services-section__final-block-title-earth-text,
+    .services-section__final-block-title-earth-rent-text {
+        width: 140px;
+    }
+
+    .services-section__final-block-title-commerce-text,
+    .services-section__final-block-title-commerce-rent-text {
+        width: 100px;
+    }
+
+    .services-section__button-active {
+        padding: 15px 13px;
+        font-size: 12px;
+        height: 22px;
+        width: 242px;
+    }
+
+    .services-section__arrow-image {
+        margin: 0;
+    }
+
+    .arrow-image-end {
+        transform: rotate(180deg);
+    }
+}
+
+@media (min-width: 1400px) {
+    .services-section__block-general {
+        transform: scale(1.05);
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (min-width: 1860px) {
+    .services-section__block-general {
+        transform: scale(1.15);
+        padding-top: 105px;
+        padding-bottom: 105px;
     }
 }
