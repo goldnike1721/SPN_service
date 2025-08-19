@@ -280,10 +280,6 @@
 }
 
 @media (min-width: 400px) {
-  .header__nav-menu-top {
-    transform: translateY(-57px);
-  }
-
   .header__nav-menu-top-title {
     font-size: 13.55px;
   }
@@ -296,10 +292,6 @@
 
   .header__nav-list {
     margin-top: -20px;
-  }
-
-  .header__nav-menu-top {
-    transform: translateY(-47px);
   }
 }
 
@@ -355,6 +347,7 @@
 
   .header__nav-menu-top {
     transform: translate(0);
+    width: 231px;
   }
 
   .header__nav-menu {
@@ -535,6 +528,7 @@
 
   .header__nav-menu-top {
     margin-left: 30px;
+        width: 275px;
   }
 
   .header__nav-list {
@@ -602,5 +596,9 @@
 
   .header__nav-list {
     gap: 45px;
+  }
+
+   .header__nav-menu-top {
+        width: 360px;
   }
 }
