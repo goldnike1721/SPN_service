@@ -133,20 +133,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #008AA2;
+    background: linear-gradient(135deg, #008AA2, #008AA2);
     color: #fff;
     font-family: var(--text-font-family);
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     padding: 7px 21px;
     border: none;
     border-radius: 28px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-top: 21px;
-    width: 166.15px;
-    opacity: 90%;
+    width: 100%;
+    opacity: 0.9;
+    height: 45px;
+    transition: all 0.25s ease-in-out;
 }
+
+.modal-btn:hover {
+    background: linear-gradient(135deg, #0fa9bd, #13c2d9);
+    transform: translateY(2px);
+}
+
+.modal-btn:active {
+    background: linear-gradient(135deg, #09808f, #0b90a3);
+    transform: translateY(0) scale(0.97);
+}
+
 
 .modal-hour-select,
 .modal-minutes-select,

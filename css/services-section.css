@@ -217,6 +217,12 @@
     margin-bottom: 24px;
 }
 
+.services-section__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .services-section__button-active {
     text-align: center;
     display: flex;
@@ -226,15 +232,26 @@
     padding: 8px 13px;
     border: 0;
     border-radius: 30px;
-    background: #0b90a3;
+    background: linear-gradient(135deg, #008AA2, #008AA2);
     color: #fff;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 15px;
     font-family: var(--text-font-family);
     cursor: pointer;
     height: 45px;
     width: 278.47px;
     opacity: 90%;
+    transition: all 0.25s ease-in-out;
+}
+
+.services-section__button-active:hover {
+    background: linear-gradient(135deg, #0fa9bd, #13c2d9);
+    transform: translateY(2px);
+}
+
+.services-section__button-active:active {
+    background: linear-gradient(135deg, #09808f, #0b90a3);
+    transform: translateY(0) scale(0.97);
 }
 
 .services-section__final-block-title-apartment-rent,
@@ -1017,8 +1034,8 @@
 
     .services-section__button-active {
         padding: 15px 13px;
-        font-size: 12px;
-        height: 22px;
+        font-size: 11px;
+        height: 30px;
         width: 242px;
     }
 
@@ -1031,11 +1048,33 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .services-section__button-active {
+        font-size: 13px;
+        height: 35px;
+    }
+
+    .services-section__bottom-block-chackbox>*:nth-child(7),
+    .services-section__bottom-block-chackbox>*:nth-child(8) {
+        transform: translateY(-35px);
+    }
+}
+
 @media (min-width: 1400px) {
     .services-section__block-general {
         transform: scale(1.05);
         padding-top: 70px;
         padding-bottom: 70px;
+    }
+
+    .services-section__button-active {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .services-section__bottom-block-chackbox>*:nth-child(7),
+    .services-section__bottom-block-chackbox>*:nth-child(8) {
+        transform: translateY(-40px);
     }
 }
 
@@ -1044,5 +1083,15 @@
         transform: scale(1.15);
         padding-top: 105px;
         padding-bottom: 105px;
+    }
+
+    .services-section__button-active {
+        font-size: 18px;
+        height: 44px;
+    }
+
+    .services-section__bottom-block-chackbox>*:nth-child(7),
+    .services-section__bottom-block-chackbox>*:nth-child(8) {
+        transform: translateY(-44px);
     }
 }

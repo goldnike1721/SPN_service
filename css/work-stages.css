@@ -158,8 +158,8 @@
 
 .work-stages-section__form-checkbox {
     appearance: none;
-    min-width: 15px;
-    min-height: 15px;
+    min-width: 20px;
+    min-height: 20px;
     border: 1.39px solid #fff;
     background: transparent;
     cursor: pointer;
@@ -172,10 +172,10 @@
 .work-stages-section__form-checkbox:checked::after {
     content: "";
     position: absolute;
-    left: 4.5px;
-    top: 1.5px;
-    width: 4px;
-    height: 8px;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 11px;
     border: solid #fff;
     border-width: 0 1px 1px 0;
     transform: rotate(45deg);
@@ -190,16 +190,16 @@
 
 .work-stages-section__form-input {
     width: 100%;
-    padding: 14px 12px;
+    padding: 10px 15px;
     border: 1.39px solid #fff;
     border-radius: 30px;
     background: transparent;
     color: #fff;
-    font-size: 12px;
+    font-size: 15px;
     font-family: var(--text-font-family);
     font-weight: 400;
     outline: none;
-    height: 27.77px;
+    height: 41px;
 }
 
 .work-stages-section__form-input::placeholder {
@@ -220,25 +220,32 @@
     padding: 8px 13px;
     border: 0;
     border-radius: 30px;
-    background: #0b90a3;
+    background: linear-gradient(135deg, #008AA2, #008AA2);
     color: #fff;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 15px;
     font-family: var(--text-font-family);
     cursor: pointer;
     height: 45px;
     width: 278.47px;
     opacity: 90%;
+    transition: all 0.25s ease-in-out;
 }
 
 .work-stages-section__form-button:hover {
-    filter: brightness(1.06);
+    background: linear-gradient(135deg, #0fa9bd, #13c2d9);
+    transform: translateY(2px);
+}
+
+.work-stages-section__form-button:active {
+    background: linear-gradient(135deg, #09808f, #0b90a3);
+    transform: translateY(0) scale(0.97);
 }
 
 .work-stages-section__form-checktext {
     font-family: var(--text-font-family);
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     opacity: 90%;
 }
@@ -301,8 +308,6 @@
     }
 
     .work-stages-section__form-button {
-        font-size: 13px;
-        height: 37px;
         width: 310px;
     }
 
@@ -364,8 +369,6 @@
     }
 
     .work-stages-section__form-button {
-        font-size: 12px;
-        height: 37px;
         width: 170px;
     }
 
@@ -447,7 +450,7 @@
         background-color: rgba(0, 138, 162, 0.4);
         position: absolute;
         z-index: 0;
-        transform: translateY(-112px);
+        transform: translateY(-104px);
     }
 
     .work-stages-section__form-checktext {
@@ -471,8 +474,8 @@
     }
 
     .work-stages-section__form-button {
-        font-size: 9px;
-        height: 21.68px;
+        font-size: 11px;
+        height: 30px;
         width: 143.06px;
     }
 
@@ -549,8 +552,8 @@
     }
 
     .work-stages-section__form-button {
-        font-size: 11px;
-        height: 24px;
+        font-size: 13px;
+        height: 35px;
         width: 178.66px;
     }
 
@@ -614,7 +617,7 @@
 
     .work-stages-section__background {
         height: 185px;
-        transform: translateY(-124px);
+        transform: translateY(-118px);
     }
 
     .work-stages-section__form-fields {
@@ -637,8 +640,8 @@
     }
 
     .work-stages-section__form-button {
-        font-size: 13px;
-        height: 32px;
+        font-size: 16px;
+        height: 40px;
         width: 204px;
     }
 
@@ -697,7 +700,7 @@
 
     .work-stages-section__background {
         height: 200px;
-        transform: translateY(-132px);
+        transform: translateY(-124px);
     }
 
     .work-stages-section__form-fields {
@@ -720,8 +723,6 @@
     }
 
     .work-stages-section__form-button {
-        font-size: 15px;
-        height: 36px;
         width: 219.34px;
     }
 
@@ -806,7 +807,7 @@
 
     .work-stages-section__form-button {
         font-size: 18px;
-        height: 42px;
+        height: 50px;
         width: 257.34px;
     }
 

@@ -24,22 +24,13 @@ function getNextWorkDays() {
 }
 
 function updateDayOptions() {
-    const today = new Date();
     const nextDays = getNextWorkDays();
     daySelect.innerHTML = '';
 
-    nextDays.forEach((dayNum, idx) => {
+    nextDays.forEach(dayNum => {
         const option = document.createElement('option');
-        if (idx === 0 && dayNum === today.getDay()) {
-            option.value = 'today';
-            option.text = 'Сьогодні';
-        } else if ((idx === 0 && dayNum !== today.getDay()) || (idx === 1 && dayNum === today.getDay())) {
-            option.value = 'tomorrow';
-            option.text = 'Завтра';
-        } else {
-            option.value = String(dayNum);
-            option.text = workDays[dayNum - 1];
-        }
+        option.value = String(dayNum);
+        option.text = workDays[dayNum - 1];
         daySelect.appendChild(option);
     });
 
