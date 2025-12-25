@@ -1,0 +1,78 @@
+[
+    {
+        "image": "img/start/timeline.png",
+        "imageClass": "start-section__banner-item-image",
+        "alt": "Іконка першого блоку часової шкали",
+        "title": "Дослідження ринку",
+        "texts": [
+            {
+                "content": "нерухомості для",
+                "class": "text-one"
+            },
+            {
+                "content": "визначення вартості",
+                "class": "text-one"
+            },
+            {
+                "content": "Вашого об’єкту"
+            }
+        ]
+    },
+    {
+        "image": "img/start/format_list_bulleted.png",
+        "imageClass": "start-section__banner-item-image1",
+        "alt": "Іконка другого блоку формату списку з маркірованим знаком",
+        "title": "Підбір об’єктів",
+        "texts": [
+            {
+                "content": "нерухомого майна",
+                "class": "text-one"
+            },
+            {
+                "content": "відповідно до Ваших",
+                "class": "text-one"
+            },
+            {
+                "content": "вимог та бюджету"
+            }
+        ]
+    },
+    {
+        "image": "img/start/schedule.png",
+        "imageClass": "start-section__banner-item-image2",
+        "alt": "Іконка третього блоку розкладу",
+        "title": "Економія вашого",
+        "texts": [
+            {
+                "content": "часу та сил на",
+                "class": "text-one"
+            },
+            {
+                "content": "покази і пошуки",
+                "class": "text-one"
+            },
+            {
+                "content": "потрібного об’єкта"
+            }
+        ]
+    },
+    {
+        "image": "img/start/format_list_bulleted-2.png",
+        "imageClass": "start-section__banner-item-image3",
+        "alt": "Іконка четвертого блоку розкладу",
+        "title": "Супровід",
+        "texts": [
+            {
+                "content": "на всіх етапах",
+                "class": "text-one"
+            },
+            {
+                "content": "співпраці з нами",
+                "class": "text-one"
+            },
+            {
+                "content": "та партнерство"
+            }
+        ]
+    }
+]

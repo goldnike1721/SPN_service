@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СПН Сервіс</title>
+    <link rel="apple-touch-icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+    <link rel="stylesheet" href="/css/index.css" />
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__background">
+            <div class="header__container container-header">
+                <nav data-hx-trigger="load" data-hx-swap="outerHTML"
+                    data-hx-get="/partials/global.header-nav.partial.html"></nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="/partials/start-section.partial.html">
+        </section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="/partials/services-section.partial.html">
+        </section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML"
+            data-hx-get="/partials/work-stages-section.partial.html">
+        </section>
+    </main>
+    <footer>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="/partials/global-footer.partial.html">
+        </section>
+    </footer>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="/partials/global-modal-connection.partial.html">
+    </section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="/partials/global-modal-connection-button.partial.html">
+    </section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML"
+        data-hx-get="/partials/services-section-modal.partial.html">
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="/js/index.js"></script>
+<script src="/js/real-estate.js"></script>
+<script src="/js/agreement.js"></script>
+<script src="/js/renderBlocks.js"></script>
+<script src="/js/start-section.js"></script>
+<script src="/js/work-stages.js"></script>
+
+</html>

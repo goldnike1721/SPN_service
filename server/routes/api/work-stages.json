@@ -1,0 +1,38 @@
+[
+    {
+        "description": "Фото або відеозйомка обʼєкта нерухомості",
+        "arrowClass": "step-one",
+        "descGeneralClass": "",
+        "image": "/img/work-stages/step-one.svg"
+    },
+    {
+        "description": "Оцінка обʼєкту нерухомого майна",
+        "arrowClass": "step-two",
+        "descGeneralClass": "work-description-general-none-two",
+        "image": "/img/work-stages/step-two.svg"
+    },
+    {
+        "description": "Укладення договору з надання послуг",
+        "arrowClass": "step-three",
+        "descGeneralClass": "work-description-general-none-trhee",
+        "image": "/img/work-stages/step-three.svg"
+    },
+    {
+        "description": "Рекламування Вашого об’єкту нерухомості",
+        "arrowClass": "step-four",
+        "descGeneralClass": "work-description-general-none-four",
+        "image": "/img/work-stages/step-four.svg"
+    },
+    {
+        "description": "Огляд об’єкту зацікавленими особами",
+        "arrowClass": "step-five",
+        "descGeneralClass": "",
+        "image": "/img/work-stages/step-five.svg"
+    },
+    {
+        "description": "Підготовка документів для заключення угоди",
+        "arrowClass": "step-six",
+        "descGeneralClass": "work-description-general-none-six",
+        "image": "/img/work-stages/step-six.svg"
+    }
+]
