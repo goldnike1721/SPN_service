@@ -102,6 +102,7 @@ const SHEET_RANGE = process.env.GOOGLE_SHEET_RANGE || 'Лист1!A:N';
 
 async function addToGoogleSheet(data = {}) {
     try {
+        console.log('GOOGLE_CREDENTIALS:', process.env.GOOGLE_CREDENTIALS?.slice(0, 50));
         const auth = new google.auth.GoogleAuth({
             keyFile: path.resolve(process.env.GOOGLE_APPLICATION_CREDENTIALS),
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
