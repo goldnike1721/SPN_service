@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 dotenv.config();
 
 app.use(express.json());
@@ -33,7 +33,7 @@ app.get('/api/work-stages', (req, res) => {
 const TelegramBot = require('node-telegram-bot-api');
 require('dotenv').config();
 
-const callbackBot = new TelegramBot(process.env.TELEGRAM_API_CALL_BACK);
+const callbackBot = new TelegramBot(process.env.TELEGRAM_API_CALL_BACK, { polling: true });
 callbackBot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     console.log(`Натиснули /start у Callback Bot! Chat ID: ${chatId}`);
@@ -45,7 +45,7 @@ callbackBot.on('callback_query', (query) => {
     callbackBot.answerCallbackQuery(query.id, { text: 'Chat ID отримано!' });
 });
 
-const adviceBot = new TelegramBot(process.env.TELEGRAM_API_ADVICE);
+const adviceBot = new TelegramBot(process.env.TELEGRAM_API_ADVICE, { polling: true });
 adviceBot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     console.log(`Натиснули /start у Advice Bot! Chat ID: ${chatId}`);
@@ -57,7 +57,7 @@ adviceBot.on('callback_query', (query) => {
     adviceBot.answerCallbackQuery(query.id, { text: `Chat ID: ${chatId}` });
 });
 
-const modalBot = new TelegramBot(process.env.TELEGRAM_API_MODAL);
+const modalBot = new TelegramBot(process.env.TELEGRAM_API_MODAL, { polling: true });
 modalBot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     console.log(`Натиснули /start у Modal Bot! Chat ID: ${chatId}`);
@@ -69,7 +69,7 @@ modalBot.on('callback_query', (query) => {
     modalBot.answerCallbackQuery(query.id, { text: `Chat ID: ${chatId}` });
 });
 
-const workStagesBot = new TelegramBot(process.env.TELEGRAM_API_WORK_STAGES);
+const workStagesBot = new TelegramBot(process.env.TELEGRAM_API_WORK_STAGES, { polling: true });
 workStagesBot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     console.log(`Натиснули /start у Work Stages Bot! Chat ID: ${chatId}`);
@@ -81,7 +81,7 @@ workStagesBot.on('callback_query', (query) => {
     workStagesBot.answerCallbackQuery(query.id, { text: `Chat ID: ${chatId}` });
 });
 
-const chekboxBot = new TelegramBot(process.env.TELEGRAM_API_CHEKBOX);
+const chekboxBot = new TelegramBot(process.env.TELEGRAM_API_CHEKBOX, { polling: true });
 chekboxBot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     console.log(`Натиснули /start у Chekbox Bot! Chat ID: ${chatId}`);
@@ -102,13 +102,8 @@ const SHEET_RANGE = process.env.GOOGLE_SHEET_RANGE || 'Лист1!A:N';
 
 async function addToGoogleSheet(data = {}) {
     try {
-        const credentials = JSON.parse(process.env.GOOGLE_CREDENTIALS);
-
-        // фікс переносів
-        credentials.private_key = credentials.private_key.replace(/\\n/g, '\n');
-
         const auth = new google.auth.GoogleAuth({
-            credentials,
+            keyFile: path.resolve(process.env.GOOGLE_APPLICATION_CREDENTIALS),
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         });
 
