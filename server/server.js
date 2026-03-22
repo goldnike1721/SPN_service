@@ -220,13 +220,13 @@ E-mail: ${email}
     try {
         await adviceBot.sendMessage(adviceChatId, message);
 
-        // await addToGoogleSheet({
-        //     name,
-        //     phone,
-        //     email,
-        //     createdAt,
-        //     note: "Консультація"
-        // });
+        await addToGoogleSheet({
+            name,
+            phone,
+            email,
+            createdAt,
+            note: "Консультація"
+        });
 
         res.json({ success: true });
     } catch (err) {
