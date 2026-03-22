@@ -182,20 +182,17 @@ app.post('/api/send-callback', async (req, res) => {
     `;
 
     try {
-        await callbackBot.sendMessage(chatId, message);
-
         await addToGoogleSheet({
-            name,
-            phone,
-            callbackTime,
-            createdAt,
-            note: "Зворотній звʼязок"
+            name: 'TEST',
+            phone: '123',
+            email: 'test@test.com',
+            createdAt: new Date().toISOString(),
         });
 
-        res.json({ success: true });
+        return res.json({ success: true });
     } catch (err) {
-        console.error("❌ Помилка при обробці заявки:", err);
-        res.status(500).json({ error: 'Помилка при відправці' });
+        console.error('SHEETS ERROR:', err);
+        return res.status(500).json({ error: err.message });
     }
 });
 // ==========================
