@@ -191,8 +191,8 @@ app.post('/api/send-callback', async (req, res) => {
 
         return res.json({ success: true });
     } catch (err) {
-        console.error('SHEETS ERROR:', err);
-        return res.status(500).json({ error: err.message });
+        console.error("❌ FULL ERROR:", err);
+        res.status(500).json({ error: err.message });
     }
 });
 // ==========================
