@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://spn.biz.ua/sitemap.xml
