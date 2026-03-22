@@ -217,22 +217,22 @@ E-mail: ${email}
 Дата створення заявки: ${createdAt}
     `;
 
-    // try {
-    //     await adviceBot.sendMessage(adviceChatId, message);
+    try {
+        await adviceBot.sendMessage(adviceChatId, message);
 
-    //     // await addToGoogleSheet({
-    //     //     name,
-    //     //     phone,
-    //     //     email,
-    //     //     createdAt,
-    //     //     note: "Консультація"
-    //     // });
+        // await addToGoogleSheet({
+        //     name,
+        //     phone,
+        //     email,
+        //     createdAt,
+        //     note: "Консультація"
+        // });
 
-    //     res.json({ success: true });
-    // } catch (err) {
-    //     console.error("❌ Помилка у /api/advice:", err);
-    //     res.status(500).json({ error: "Помилка при відправці" });
-    // }
+        res.json({ success: true });
+    } catch (err) {
+        console.error("❌ Помилка у /api/advice:", err);
+        res.status(500).json({ error: "Помилка при відправці" });
+    }
 });
 // ==========================
 // Модалка на повідомлення
