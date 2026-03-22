@@ -95,72 +95,72 @@ chekboxBot.on('callback_query', (query) => {
 // ==========================
 // EXCEL GOOGLE
 // ==========================
-const { google } = require('googleapis');
-require('dotenv').config();
+// const { google } = require('googleapis');
+// require('dotenv').config();
 
-const SHEET_RANGE = process.env.GOOGLE_SHEET_RANGE || 'Лист1!A:N';
+// const SHEET_RANGE = process.env.GOOGLE_SHEET_RANGE || 'Лист1!A:N';
 
-async function addToGoogleSheet(data = {}) {
-    try {
-        const auth = new google.auth.GoogleAuth({
-            keyFile: path.resolve(process.env.GOOGLE_APPLICATION_CREDENTIALS),
-            scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-        });
+// async function addToGoogleSheet(data = {}) {
+//     try {
+//         const auth = new google.auth.GoogleAuth({
+//             keyFile: path.resolve(process.env.GOOGLE_APPLICATION_CREDENTIALS),
+//             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+//         });
 
-        const sheets = google.sheets({ version: 'v4', auth });
-        const spreadsheetId = process.env.GOOGLE_SHEET_ID;
-        const meta = await sheets.spreadsheets.values.get({
-            spreadsheetId,
-            range: 'A:A',
-        });
-        const rowCount = meta.data.values ? meta.data.values.length : 0;
-        const nextNumber = rowCount === 0 ? 1 : rowCount;
+//         const sheets = google.sheets({ version: 'v4', auth });
+//         const spreadsheetId = process.env.GOOGLE_SHEET_ID;
+//         const meta = await sheets.spreadsheets.values.get({
+//             spreadsheetId,
+//             range: 'A:A',
+//         });
+//         const rowCount = meta.data.values ? meta.data.values.length : 0;
+//         const nextNumber = rowCount === 0 ? 1 : rowCount;
 
-        const callbackValue =
-            (data.callback && String(data.callback).trim()) ||
-            (data.callbackTime && String(data.callbackTime).trim()) ||
-            (data.feedback && String(data.feedback).trim()) ||
-            (data.message && String(data.message).trim()) ||
-            (data.comment && String(data.comment).trim()) ||
-            (data.question && String(data.question).trim()) ||
-            '';
+//         const callbackValue =
+//             (data.callback && String(data.callback).trim()) ||
+//             (data.callbackTime && String(data.callbackTime).trim()) ||
+//             (data.feedback && String(data.feedback).trim()) ||
+//             (data.message && String(data.message).trim()) ||
+//             (data.comment && String(data.comment).trim()) ||
+//             (data.question && String(data.question).trim()) ||
+//             '';
 
-        const values = [[
-            nextNumber,
-            data.name || '',
-            data.phone || '',
-            data.email || data.mail || '',
-            callbackValue,
-            data.realEstate || data.object || '',
-            data.dealType || data.typeDeal || '',
-            data.buildingType || data.building || '',
-            data.rentType || data.rent || '',
-            data.landType || '',
-            data.roomType || '',
-            data.createdAt || new Date().toISOString(),
-            data.free || data.text || '',
-            data.note || ''
-        ]];
+//         const values = [[
+//             nextNumber,
+//             data.name || '',
+//             data.phone || '',
+//             data.email || data.mail || '',
+//             callbackValue,
+//             data.realEstate || data.object || '',
+//             data.dealType || data.typeDeal || '',
+//             data.buildingType || data.building || '',
+//             data.rentType || data.rent || '',
+//             data.landType || '',
+//             data.roomType || '',
+//             data.createdAt || new Date().toISOString(),
+//             data.free || data.text || '',
+//             data.note || ''
+//         ]];
 
-        console.log('→ addToGoogleSheet incoming data:', data);
-        console.log('→ Will append values:', values[0]);
+//         console.log('→ addToGoogleSheet incoming data:', data);
+//         console.log('→ Will append values:', values[0]);
 
-        await sheets.spreadsheets.values.append({
-            spreadsheetId,
-            range: SHEET_RANGE,
-            valueInputOption: 'USER_ENTERED',
-            requestBody: { values },
-        });
+//         await sheets.spreadsheets.values.append({
+//             spreadsheetId,
+//             range: SHEET_RANGE,
+//             valueInputOption: 'USER_ENTERED',
+//             requestBody: { values },
+//         });
 
-        console.log('✅ Додано в Google Sheet');
-        return true;
-    } catch (err) {
-        console.error('❌ addToGoogleSheet error:', err);
-        throw err;
-    }
-}
+//         console.log('✅ Додано в Google Sheet');
+//         return true;
+//     } catch (err) {
+//         console.error('❌ addToGoogleSheet error:', err);
+//         throw err;
+//     }
+// }
 
-module.exports = addToGoogleSheet;
+// module.exports = addToGoogleSheet;
 // ==========================
 // Модальне повідомлення звʼязку
 // ==========================
@@ -183,13 +183,13 @@ app.post('/api/send-callback', async (req, res) => {
     try {
         await callbackBot.sendMessage(chatId, message);
 
-        await addToGoogleSheet({
-            name,
-            phone,
-            callbackTime,
-            createdAt,
-            note: "Зворотній звʼязок"
-        });
+        // await addToGoogleSheet({
+        //     name,
+        //     phone,
+        //     callbackTime,
+        //     createdAt,
+        //     note: "Зворотній звʼязок"
+        // });
 
         res.json({ success: true });
     } catch (err) {
@@ -220,13 +220,13 @@ E-mail: ${email}
     try {
         await adviceBot.sendMessage(adviceChatId, message);
 
-        await addToGoogleSheet({
-            name,
-            phone,
-            email,
-            createdAt,
-            note: "Консультація"
-        });
+        // await addToGoogleSheet({
+        //     name,
+        //     phone,
+        //     email,
+        //     createdAt,
+        //     note: "Консультація"
+        // });
 
         res.json({ success: true });
     } catch (err) {
@@ -256,13 +256,13 @@ E-mail: ${email}
     try {
         await modalBot.sendMessage(chatId, message);
 
-        await addToGoogleSheet({
-            name,
-            phone,
-            email,
-            createdAt,
-            note: "Модальне вікно"
-        });
+        // await addToGoogleSheet({
+        //     name,
+        //     phone,
+        //     email,
+        //     createdAt,
+        //     note: "Модальне вікно"
+        // });
 
         res.json({ success: true });
     } catch (err) {
@@ -293,14 +293,14 @@ E-mail: ${email}
     try {
         await workStagesBot.sendMessage(chatId, message);
 
-        await addToGoogleSheet({
-            name,
-            phone,
-            email,
-            createdAt,
-            free,
-            note: "Розсилка"
-        });
+        // await addToGoogleSheet({
+        //     name,
+        //     phone,
+        //     email,
+        //     createdAt,
+        //     free,
+        //     note: "Розсилка"
+        // });
 
         res.json({ success: true });
     } catch (err) {
@@ -348,19 +348,19 @@ app.post('/api/checkbox-form', async (req, res) => {
     try {
         await chekboxBot.sendMessage(chatId, message);
 
-        await addToGoogleSheet({
-            name,
-            phone,
-            email,
-            realEstate,
-            dealType,
-            buildingType: buildingTypes?.join(', ') || '',
-            rentType: rentTypes?.join(', ') || '',
-            landType: landTypes?.join(', ') || '',
-            roomType: roomTypes?.join(', ') || '',
-            createdAt,
-            note: 'Чекбокс форма'
-        });
+        // await addToGoogleSheet({
+        //     name,
+        //     phone,
+        //     email,
+        //     realEstate,
+        //     dealType,
+        //     buildingType: buildingTypes?.join(', ') || '',
+        //     rentType: rentTypes?.join(', ') || '',
+        //     landType: landTypes?.join(', ') || '',
+        //     roomType: roomTypes?.join(', ') || '',
+        //     createdAt,
+        //     note: 'Чекбокс форма'
+        // });
 
         res.json({ success: true });
     } catch (err) {
