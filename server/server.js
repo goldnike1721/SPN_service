@@ -2,8 +2,7 @@ const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
 const app = express();
-// const port = 3000;
-const port = process.env.PORT || 3000;
+const port = 3000;
 dotenv.config();
 
 app.use(express.json());
@@ -221,13 +220,13 @@ E-mail: ${email}
     try {
         await adviceBot.sendMessage(adviceChatId, message);
 
-        await addToGoogleSheet({
-            name,
-            phone,
-            email,
-            createdAt,
-            note: "Консультація"
-        });
+        // await addToGoogleSheet({
+        //     name,
+        //     phone,
+        //     email,
+        //     createdAt,
+        //     note: "Консультація"
+        // });
 
         res.json({ success: true });
     } catch (err) {
