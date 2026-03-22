@@ -102,7 +102,6 @@ const SHEET_RANGE = process.env.GOOGLE_SHEET_RANGE || 'Лист1!A:N';
 
 async function addToGoogleSheet(data = {}) {
     try {
-        console.log('GOOGLE_CREDENTIALS:', process.env.GOOGLE_CREDENTIALS?.slice(0, 50));
         const auth = new google.auth.GoogleAuth({
             keyFile: path.resolve(process.env.GOOGLE_APPLICATION_CREDENTIALS),
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
@@ -182,17 +181,20 @@ app.post('/api/send-callback', async (req, res) => {
     `;
 
     try {
+        await callbackBot.sendMessage(chatId, message);
+
         await addToGoogleSheet({
-            name: 'TEST',
-            phone: '123',
-            email: 'test@test.com',
-            createdAt: new Date().toISOString(),
+            name,
+            phone,
+            callbackTime,
+            createdAt,
+            note: "Зворотній звʼязок"
         });
 
-        return res.json({ success: true });
+        res.json({ success: true });
     } catch (err) {
-        console.error("❌ FULL ERROR:", err);
-        res.status(500).json({ error: err.message });
+        console.error("❌ Помилка при обробці заявки:", err);
+        res.status(500).json({ error: 'Помилка при відправці' });
     }
 });
 // ==========================
