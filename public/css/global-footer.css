@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 46px;
 }
 
 .global-footer__block-top,
@@ -13,15 +12,14 @@
 }
 
 .global-footer__block-top {
-  padding: 14px 0;
+  padding: 0 0 14px 0;
   max-width: 2200px;
   margin: 0 auto;
 }
 
 .global-footer__block-bottom {
   height: 100%;
-  margin: 24px 0 0 0;
-  padding: 20px 0;
+  padding: 90px 0 20px 0;
 }
 
 .global-footer__title {
@@ -235,7 +233,7 @@
   }
 
   .global-footer__block-top {
-    padding: 17px 0;
+    padding: 0 0 17px 0;
   }
 }
 
@@ -269,15 +267,11 @@
   }
 
   .global-footer__block-top {
-    padding: 33px 0;
-  }
-
-  .global-footer__general {
-    padding-top: 111px;
+    padding: 0 0 33px 0;
   }
 
   .global-footer__block-bottom {
-    margin: 57px 0 0 0;
+    padding: 188px 0 20px 0;
   }
 
   .global-footer__text-soc,
@@ -330,15 +324,11 @@
   }
 
   .global-footer__block-top {
-    padding: 20px 0;
-  }
-
-  .global-footer__general {
-    padding-top: 25px;
+    padding: 0 0 20px 0;
   }
 
   .global-footer__block-bottom {
-    margin: 36px 0 0 0;
+    padding: 81px 0 20px 0;
   }
 
   .global-footer__text-soc,
@@ -387,15 +377,11 @@
   }
 
   .global-footer__block-top {
-    padding: 30px 0;
-  }
-
-  .global-footer__general {
-    padding-top: 35px;
+    padding: 0 0 30px 0;
   }
 
   .global-footer__block-bottom {
-    margin: 45px 0 0 0;
+    padding: 100px 0 20px 0;
   }
 
   .global-footer__text-soc,
@@ -444,15 +430,11 @@
   }
 
   .global-footer__block-top {
-    padding: 40px 0;
-  }
-
-  .global-footer__general {
-    padding-top: 40px;
+    padding: 0 0 40px 0;
   }
 
   .global-footer__block-bottom {
-    margin: 50px 0 0 0;
+    padding: 110px 0 20px 0;
   }
 
   .global-footer__text-soc,
@@ -501,15 +483,11 @@
   }
 
   .global-footer__block-top {
-    padding: 50px 0;
-  }
-
-  .global-footer__general {
-    padding-top: 45px;
+    padding: 0 0 50px 0;
   }
 
   .global-footer__block-bottom {
-    margin: 55px 0 0 0;
+    padding: 120px 0 20px 0;
   }
 
   .global-footer__text-soc,
@@ -558,15 +536,11 @@
   }
 
   .global-footer__block-top {
-    padding: 60px 0;
-  }
-
-  .global-footer__general {
-    padding-top: 50px;
+    padding: 0 0 60px 0;
   }
 
   .global-footer__block-bottom {
-    margin: 68px 0 0 0;
+    padding: 138px 0 20px 0;
   }
 
   .global-footer__text-soc,

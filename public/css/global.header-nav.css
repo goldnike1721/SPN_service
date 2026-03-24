@@ -100,7 +100,7 @@
   padding-right: 15px;
   box-sizing: border-box;
   margin-top: 10px;
-  opacity: 90%;
+  opacity: 99%;
 }
 
 .social-icon {
@@ -133,7 +133,7 @@
   font-weight: 500;
   font-size: 17.55px;
   color: #fff;
-  opacity: 90%;
+  opacity: 99%;
 }
 
 .global-header__contacts-number,
@@ -209,7 +209,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
-  opacity: 90%;
+  opacity: 99%;
 }
 
 .header__nav-list .menu__element-link {
@@ -225,7 +225,7 @@
   font-weight: 500;
   font-size: 17px;
   color: #fff;
-  opacity: 90%;
+  opacity: 99%;
   margin-top: 50px;
 }
 
@@ -239,7 +239,7 @@
   align-items: center;
   flex-direction: column;
   z-index: 11111;
-  opacity: 90%;
+  opacity: 99%;
 }
 
 .header__nav-menu-top-title {
@@ -295,7 +295,7 @@
 
 .phone-link {
   text-decoration: none;
-  color: #008AA2;
+  color: #008aa2;
   transition: all 0.3s ease-in-out;
 }
 
@@ -322,7 +322,7 @@
 
 @media (min-width: 1024px) {
   .header {
-    background-color: #003B46;
+    background-color: #003b46;
   }
 
   .nav-list__link {
@@ -357,7 +357,7 @@
     font-weight: 500;
     font-size: 11px;
     color: #fff;
-    opacity: 90%;
+    opacity: 99%;
   }
 
   .header__logo-image {
@@ -398,7 +398,7 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 3px;
-    opacity: 90%;
+    opacity: 99%;
   }
 
   .header__nav-list {
